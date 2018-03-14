@@ -5,7 +5,7 @@ package fist_part;
 
 /**
  * @author xristos
- *
+ *class users
  */
 public class Users {
 	private String username, name, surname, department;
