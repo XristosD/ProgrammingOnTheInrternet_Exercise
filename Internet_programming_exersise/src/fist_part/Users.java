@@ -8,8 +8,17 @@ package fist_part;
  *class user
  */
 public class Users {
+	
+	public Users(String username, String name, String surname, String department) {
+		super();
+		this.username = username;
+		this.name = name;
+		this.surname = surname;
+		this.department = department;
+		usersCounter++;
+	}
 	private String username, name, surname, department;
-	private static int usersCounter;
+	private static int usersCounter = 0;
 	
 	protected String getUsername() {
 		return username;
@@ -39,7 +48,7 @@ public class Users {
 		return usersCounter;
 	}
 	protected static void setUsersCounter(int usersCounter) {
-		Users.usersCounter = usersCounter;
+		usersCounter = usersCounter;
 	}
 
 }
