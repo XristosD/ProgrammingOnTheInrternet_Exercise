@@ -17,7 +17,6 @@ public class CreateUsers {
 		
 		Users d = new Users("a","a","a","a");
 		Users.getUsersCounter();
-		d.getUsersCounter();
 
 	}
 

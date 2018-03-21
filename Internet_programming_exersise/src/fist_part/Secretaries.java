@@ -3,7 +3,6 @@
  */
 package fist_part;
 
-
 /**
  * @author Tolis
  *

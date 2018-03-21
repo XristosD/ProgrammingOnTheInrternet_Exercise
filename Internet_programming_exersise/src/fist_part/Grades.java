@@ -21,4 +21,7 @@ public class Grades {
 		studentsGrades.put(s,i);
 	}
 
+	protected Integer getStudentGrade(Students s) {
+		return studentsGrades.get(s);
+	}
 }
