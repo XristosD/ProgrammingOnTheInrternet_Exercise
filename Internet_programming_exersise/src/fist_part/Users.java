@@ -7,9 +7,12 @@ package fist_part;
  * @author xristos
  *class user
  */
-public class Users {
+class Users {
 	
-	public Users(String username, String name, String surname, String department) {
+	private String username, name, surname, department;
+	private static int usersCounter = 0;
+	
+	protected Users(String username, String name, String surname, String department) {
 		super();
 		this.username = username;
 		this.name = name;
@@ -17,8 +20,7 @@ public class Users {
 		this.department = department;
 		usersCounter++;
 	}
-	private String username, name, surname, department;
-	private static int usersCounter = 0;
+
 	
 	protected String getUsername() {
 		return username;
@@ -47,8 +49,6 @@ public class Users {
 	protected static int getUsersCounter() {
 		return usersCounter;
 	}
-	protected static void setUsersCounter(int usersCounter) {
-		usersCounter = usersCounter;
-	}
+	
 
 }
