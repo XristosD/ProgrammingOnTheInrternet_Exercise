@@ -11,11 +11,11 @@ import java.util.*;
 public class Courses {
 	private String courseName;
 	private LinkedList<Professors> courseProfessors;
-	private Grades courseGrades = new Grades();
-	public Courses(String courseName, LinkedList<Professors> courseProfessors) {
+	public Grades courseGrades = new Grades();
+	
+	public Courses(String courseName) {
 		super();
 		this.courseName = courseName;
-		this.courseProfessors = courseProfessors;
 	}
 	public String getCourseName() {
 		return courseName;
@@ -26,7 +26,7 @@ public class Courses {
 	public LinkedList<Professors> getCourseProfessors() {
 		return courseProfessors;
 	}
-	public void setCourseProfessors(LinkedList<Professors> courseProfessors) {
-		this.courseProfessors = courseProfessors;
+	public void setCourseProfessors(Professors p) {
+		this.courseProfessors.add(p);
 	}
 }
