@@ -9,7 +9,7 @@ package fist_part;
  */
 public class Students extends Users {
 	
-	private String regNum;
+	private int regNum;
 
 	/**
 	 * @param username
@@ -17,7 +17,7 @@ public class Students extends Users {
 	 * @param surname
 	 * @param department
 	 */
-	public Students(String username, String name, String surname, String department, String regNum) {
+	public Students(String username, String name, String surname, String department, int regNum) {
 		super(username, name, surname, department);
 		// TODO Auto-generated constructor stub
 		this.regNum = regNum;
