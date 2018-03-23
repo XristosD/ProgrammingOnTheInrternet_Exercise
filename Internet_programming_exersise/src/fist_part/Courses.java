@@ -10,7 +10,7 @@ import java.util.*;
  */
 public class Courses {
 	private String courseName;
-	private LinkedList<Professors> courseProfessors;
+	private LinkedList<Professors> courseProfessors = new LinkedList<Professors>();
 	public Grades courseGrades = new Grades();
 	
 	public Courses(String courseName) {
